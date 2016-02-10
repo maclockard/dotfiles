@@ -83,42 +83,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-### Custom components defined by me
 
-# Remove "user@hostname" when I'm the one logged in
-DEFAULT_USER="maclockard"
 
-# needed for jenv
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-
-# makes scala availble to intellij
-SCALA_HOME="/usr/local/opt/scala/idea"
-
-# color stuff for ls
-export LSCOLORS=bxfxbEaEBxxEhEhBaDaCaD
-
-# My aliases
-alias ls='ls -lGh'
-alias sshclear='ssh jml13@ssh.clear.rice.edu'
-alias work='cd ~/workspace'
-
-#alias for 330 SQL shit
-export PATH="/opt/local/bin:$PATH"
-export TDSVER=8.0
-alias 330run='bsqldb -U adrice\\jml13 -S classdb.ad.rice.edu:1433 -D jml13_1 -i'
-
-alias 330data='tsql -U adrice\\jml13 -H classdb.ad.rice.edu -p 1433'
-export PATH="/usr/local/sbing:$PATH"
-
-if which pyspark > /dev/null; then
-  export SPARK_HOME="/usr/local/Cellar/apache-spark/1.5.1/libexec/"
-  export PYSPARK_SUBMIT_ARGS="--master local[2] pyspark-shell"
-  export PYTHONPATH=$SPARK_HOME/libexec/python/:$PYTHONPATH
-  export PYTHONPATH=$SPARK_HOME/libexec/python/lib/py4j-0.8.2.1-src.zip:$PYTHONPATH
-fi
-
-#latex stuff
-export PATH="$PATH:/usr/local/texlive/2015/bin/x86_64-darwin"
-alias tex='pdflatex'
-export PATH="/usr/local/sbin:$PATH"

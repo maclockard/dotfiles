@@ -1,0 +1,5 @@
+### Custom components defined by me
+
+# Remove "user@hostname" when I'm the one logged in
+DEFAULT_USER="maclockard"
+

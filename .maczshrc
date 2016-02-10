@@ -1,0 +1,7 @@
+# color stuff for ls
+export LSCOLORS=bxfxbEaEBxxEhEhBaDaCaD
+
+#latex stuff
+export PATH="$PATH:/usr/local/texlive/2015/bin/x86_64-darwin"
+alias tex='pdflatex'
+export PATH="/usr/local/sbin:$PATH"
