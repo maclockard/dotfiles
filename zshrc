@@ -1,6 +1,8 @@
-# oh-my-zsh overides
+# oh-my-zsh set-up 
+export ZSH=~/.oh-my-zsh
 ZSH_THEME="agnoster"
 plugins=(git brew pip web-search)
+source $ZSH/oh-my-zsh.sh
 
 # Remove "user@hostname" when I'm the one logged in
 DEFAULT_USER="maclockard"
