@@ -1,4 +1,4 @@
-# oh-my-zsh set-up 
+# oh-my-zsh set-up
 export ZSH=~/.oh-my-zsh
 ZSH_THEME="agnoster"
 plugins=(git brew pip web-search)
@@ -11,6 +11,7 @@ DEFAULT_USER="maclockard"
 export LSCOLORS=bxfxbEaEBxxEhEhBaDaCaD
 
 # My aliases
+alias updot='~/.dotfiles/install'
 alias ls='ls -lGh'
 alias sshclear='ssh -Y jml13@ssh.clear.rice.edu'
 alias work='cd ~/workspace'
