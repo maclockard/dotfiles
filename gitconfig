@@ -7,3 +7,5 @@
 	email = maclockard@gmail.com
 [core]
 	autocrlf = input
+[credential]
+	helper = store
