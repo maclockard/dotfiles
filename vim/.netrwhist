@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/maclockard/workspace/flask_projects/brown_leaderboard/templates'
+let g:netrw_dirhist_2='/Users/maclockard/workspace/flask_projects/brown_leaderboard'
+let g:netrw_dirhist_3='/Users/maclockard/workspace/Comp412/lab2/.git'
+let g:netrw_dirhist_4='/Users/maclockard/workspace/Comp412/lab3/src/output'
+let g:netrw_dirhist_5='/Users/maclockard'
