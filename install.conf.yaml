@@ -1,4 +1,4 @@
-- clean: ['~']
+- clean: ['~', '~/.config']
 
 - link:
     ~/.dotfiles: ''
@@ -8,6 +8,8 @@
     ~/.zshrc_local: zshrc_local
     ~/.gitconfig: gitconfig
     ~/.oh-my-zsh: oh-my-zsh
+    ~/.config/ranger/rc.conf: config/ranger/rc.conf
+      
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

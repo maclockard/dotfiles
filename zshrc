@@ -1,7 +1,7 @@
 # oh-my-zsh set-up
 export ZSH=~/.oh-my-zsh
 ZSH_THEME="agnoster"
-plugins=(git brew pip web-search tmux)
+plugins=(git brew pip web-search tmux colored-man-pages)
 source $ZSH/oh-my-zsh.sh
 
 # detect what os is being used
@@ -34,7 +34,6 @@ then
     export LS_COLORS='di=31:ln=35:so=31;1:pi=0;1:ex=1;31:bd=0;1:cd=37;1:su=37;1:sg=0;1:tw=0;1:ow=0;1:'
     alias ls='ls -lh --color=auto'
 fi
-
 
 ### My aliases
 # make updating dot files easy
