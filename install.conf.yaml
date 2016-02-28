@@ -5,8 +5,9 @@
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
+    ~/.zshrc_local: zshrc_local
     ~/.gitconfig: gitconfig
-    ~/.oh-my-zsh: oh-my-zsh 
+    ~/.oh-my-zsh: oh-my-zsh
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
