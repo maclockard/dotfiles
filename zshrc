@@ -16,6 +16,7 @@ export LSCOLORS=bxfxbEaEBxxEhEhBaDaCaD
 # make updating dot files easy
 alias dotfiles='cd ~/.dotfiles/'
 alias zshrc='vim ~/.dotfiles/zshrc'
+alias zshrc_local='vim ~/.dotfiles/zshrc_local'
 alias upzsh='source ~/.zshrc'
 alias vimrc='vim ~/.dotfiles/vimrc'
 alias updot='dotfiles ; git pull ; ./install ; upzsh ; cd ~-'
