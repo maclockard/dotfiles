@@ -11,7 +11,6 @@ then
 else
         export LINUX=
 fi
-
 if [[ `uname` == 'Darwin' ]]
 then
         export OSX=1
@@ -45,6 +44,7 @@ alias zshrc_local='vim ~/.dotfiles/zshrc_local'
 alias upzsh='source ~/.zshrc'
 alias vimrc='vim ~/.dotfiles/vimrc'
 alias updot='dotfiles ; git pull ; ./install ; upzsh ; cd ~-'
+alias pushdot='dotfiles ; git add . ; git commit ; git push origin master ; cd ~-'
 
 # ssh aliases
 alias sshclear='ssh -Y jml13@ssh.clear.rice.edu'
