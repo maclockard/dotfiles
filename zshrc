@@ -42,7 +42,8 @@ alias upzsh='source ~/.zshrc'
 alias zshrc='vim ~/.dotfiles/zshrc && upzsh'
 alias zshrc_local='vim ~/.dotfiles/zshrc_local && upzsh'
 alias vimrc='vim ~/.dotfiles/vimrc'
-alias updot='dotfiles ; git pull ; ./install ; upzsh ; cd ~-'
+alias updot='dotfiles ; git pull ; upzsh ; cd ~-'
+alias idot='~/.dotfiles/install'
 alias pushdot='dotfiles ; git add . ; git commit ; git push origin master ; cd ~-'
 
 # ssh aliases
