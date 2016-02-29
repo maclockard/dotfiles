@@ -7,9 +7,11 @@
     ~/.zshrc: zshrc
     ~/.zshrc_local: zshrc_local
     ~/.gitconfig: gitconfig
+    ~/.tmux.conf: tmux.conf
     ~/.oh-my-zsh: oh-my-zsh
     ~/.config/ranger/rc.conf: config/ranger/rc.conf
-      
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - source ~/.zshrc
+    - tmux source-file ~/.tmux.conf
