@@ -4,6 +4,9 @@ ZSH_THEME="agnoster"
 plugins=(git brew pip web-search tmux colored-man-pages)
 source $ZSH/oh-my-zsh.sh
 
+# use the right term for tmux
+TERM=screen-256color
+
 # detect what os is being used
 if [[ `uname` == 'Linux' ]]
 then
