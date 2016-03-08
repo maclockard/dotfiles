@@ -51,6 +51,7 @@ alias pushdot='dotfiles ; git add . ; git commit ; git push origin master ; cd ~
 
 # ssh aliases
 alias sshclear='ssh -Y jml13@ssh.clear.rice.edu'
+alias sshsky='ssh -Y jml13@sky.clear.rice.edu'
 
 #shortcuts
 alias work='cd ~/workspace'
