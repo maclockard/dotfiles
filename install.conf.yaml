@@ -2,7 +2,7 @@
 
 - link:
     ~/.dotfiles: ''
-    ~/.vim: vim
+    ~/.vim/bundle/Vundle.vim: vim/bundle/Vundle.vim
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
     ~/.zshrc_local: zshrc_local
@@ -14,4 +14,5 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - source ~/.zshrc
+    - vim +PluginInstall +qall
     - tmux source-file ~/.tmux.conf
