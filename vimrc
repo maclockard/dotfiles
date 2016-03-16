@@ -9,15 +9,17 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'vim-airline/vim-airline'
 
 " Vundle end setup
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 " Vimrc
+set laststatus=2
 set number
 syntax enable
 set background=dark
 colorscheme solarized
 set tabstop=8 shiftwidth=8 expandtab
-let mapleader = " "
+let mapleader=" "
