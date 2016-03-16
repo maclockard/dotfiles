@@ -1,7 +1,7 @@
 - clean: ['~', '~/.config']
 
 - link:
-    ~/.dotfiles: ''
+    ~/.dotfiles: './'
     ~/.vim/bundle/Vundle.vim: vim/bundle/Vundle.vim
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
@@ -14,5 +14,4 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - source ~/.zshrc
-    - vim +PluginInstall +qall
     - tmux source-file ~/.tmux.conf
