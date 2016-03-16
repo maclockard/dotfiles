@@ -7,6 +7,8 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Plugins
 Plugin 'flazz/vim-colorschemes'
+Plugin 'ervandew/supertab'
+Plugin 'scrooloose/nerdcommenter'
 
 " Vundle end setup
 call vundle#end()            " required
@@ -18,3 +20,4 @@ syntax enable
 set background=dark
 colorscheme solarized
 set tabstop=8 shiftwidth=8 expandtab
+let mapleader = " "
