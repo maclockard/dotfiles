@@ -29,6 +29,13 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" 80 char column
+if exists('+colorcolumn')
+        set colorcolumn=121
+else
+        au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+endif
+
 " Stuff for airline
 set laststatus=2
 let g:airline_theme='solarized'
