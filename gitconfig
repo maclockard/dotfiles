@@ -9,3 +9,5 @@
 	autocrlf = input
 [credential]
 	helper = store
+[push]
+	default = matching
