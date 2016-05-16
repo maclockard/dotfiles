@@ -21,7 +21,7 @@ filetype plugin indent on    " required
 " Vimrc
 let mapleader=" "
 set number
-set tabstop=8 shiftwidth=8 expandtab
+set tabstop=4 shiftwidth=4 expandtab
 imap jk <ESC>
 
 " Stuff for color scheme
