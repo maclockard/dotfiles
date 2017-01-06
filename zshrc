@@ -1,7 +1,7 @@
 # oh-my-zsh set-up
 export ZSH=~/.oh-my-zsh
 ZSH_THEME="agnoster"
-plugins=(git brew pip web-search tmux colored-man-pages)
+plugins=(git pip web-search tmux colored-man-pages)
 source $ZSH/oh-my-zsh.sh
 
 # use the right term for tmux
@@ -48,6 +48,7 @@ alias vimrc='vim ~/.dotfiles/vimrc'
 alias idot='~/.dotfiles/install'
 alias updot='dotfiles ; git pull ; idot ; cd ~-'
 alias pushdot='dotfiles ; git add . ; git commit ; git push origin master ; cd ~-'
+alias intel='open -a "IntelliJ IDEA CE"'
 
 #shortcuts
 alias work='cd ~/workspace'

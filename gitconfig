@@ -4,10 +4,15 @@
 	smudge = git media smudge %f
 [user]
 	name = mac
-	email = maclockard@gmail.com
+	email = mlockard@palantir.com
 [core]
 	autocrlf = input
+	trustctime = false
 [credential]
 	helper = store
 [push]
 	default = matching
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
