@@ -13,6 +13,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'junegunn/goyo.vim'
+Plugin 'nathangrigg/vim-beancount'
 
 " Vundle end setup
 call vundle#end()            " required
