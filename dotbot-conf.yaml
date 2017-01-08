@@ -5,6 +5,9 @@
     ~/.zplug: submodules/zplug
     ~/.zshrc: zshrc
     ~/.zshrc_local: zshrc_local
+    ~/.vim/autoload/plug.vim:
+        create: true
+        path: 'submodules/vim-plug/plug.vim'
     ~/.vimrc: vimrc
     ~/.gitconfig: gitconfig
     ~/.tmux.conf: tmux.conf
