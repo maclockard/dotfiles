@@ -1,6 +1,9 @@
 [submodule "dotbot"]
-	path = dotbot
+	path = submodules/dotbot
 	url = https://github.com/anishathalye/dotbot
 [submodule "zplug"]
-	path = zplug
+	path = submodules/zplug
 	url = https://github.com/zplug/zplug
+[submodule "vim-plug"]
+	path = submodules/vim-plug
+	url = https://github.com/junegunn/vim-plug

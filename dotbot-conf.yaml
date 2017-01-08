@@ -1,0 +1,14 @@
+- clean: ['~', '~/.config']
+
+- link:
+    ~/.dotfiles: './'
+    ~/.zplug: submodules/zplug
+    ~/.zshrc: zshrc
+    ~/.zshrc_local: zshrc_local
+    ~/.vimrc: vimrc
+    ~/.gitconfig: gitconfig
+    ~/.tmux.conf: tmux.conf
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - source ~/.zshrc

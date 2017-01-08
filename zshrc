@@ -1,25 +1,34 @@
-# oh-my-zsh set-up
-export ZSH=~/.oh-my-zsh
-ZSH_THEME="agnoster"
-plugins=(git pip web-search tmux colored-man-pages)
-source $ZSH/oh-my-zsh.sh
+# zplug set-up
+source ~/.zplug/init.zsh
+
+zplug 'zplug/zplug', hook-build:'zplug --self-manage'
+
+# plugins etc.
+zplug "plugins/git", from:oh-my-zsh
+#zplug "plugins/pip", from:oh-my-zsh
+#zplug "plugins/web-search", from:oh-my-zsh
+#zplug "plugins/tmux", from:oh-my-zsh
+#zplug "plugins/colored-man-pages", from:oh-my-zsh
+
+# Load theme file
+zplug "agnoster/agnoster-zsh-theme", as:theme
+
+# Install plugins if there are plugins that have not been installed
+if ! zplug check; then
+    zplug install
+fi
+
+zplug load
+
+# REMOVE THIS!!!!
+# export ZSH=~/.oh-my-zsh
+# ZSH_THEME="agnoster"
+
+OSX="[[ $OSTYPE == *darwin* ]]"
+LINUX="[[ $OSTYPE == *linux* ]]"
 
 # use the right term for tmux
 TERM=screen-256color
-
-# detect what os is being used
-if [[ `uname` == 'Linux' ]]
-then
-        export LINUX=1
-else
-        export LINUX=
-fi
-if [[ `uname` == 'Darwin' ]]
-then
-        export OSX=1
-else
-        export OSX=
-fi
 
 # Remove "user@hostname" when I'm the one logged in
 DEFAULT_USER="maclockard"
@@ -48,13 +57,14 @@ alias vimrc='vim ~/.dotfiles/vimrc'
 alias idot='~/.dotfiles/install'
 alias updot='dotfiles ; git pull ; idot ; cd ~-'
 alias pushdot='dotfiles ; git add . ; git commit ; git push origin master ; cd ~-'
-alias intel='open -a "IntelliJ IDEA CE"'
+# alias intel='open -a "IntelliJ IDEA CE"'
 
-#shortcuts
+# shortcuts
 alias work='cd ~/workspace'
 
 alias untar='tar xvfz'
 
+# If there is a local configuration file, load it
 if [ -f ~/.zshrc_local ]; then
     source ~/.zshrc_local
 fi
