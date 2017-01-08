@@ -13,5 +13,5 @@
     ~/.tmux.conf: tmux.conf
 
 - shell:
-    - [git submodule update --init --recursive, Installing submodules]
+    - [git submodule update --init --recursive --remote, Installing submodules]
     - source ~/.zshrc

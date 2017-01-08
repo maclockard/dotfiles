@@ -7,6 +7,8 @@ isLinux="[[ $OSTYPE == *linux* ]]"
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
 # plugins etc.
+zplug "lib/completion", from:oh-my-zsh
+zplug "lib/completion", from:oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/pip", from:oh-my-zsh
 zplug "plugins/web-search", from:oh-my-zsh
@@ -18,7 +20,7 @@ zplug "agnoster/agnoster-zsh-theme", as:theme
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check; then
-    printf "Install? [y/N]: "
+    printf "Install new zsh plugins? [y/N]: "
     if read -q; then
         echo; zplug install
     fi
