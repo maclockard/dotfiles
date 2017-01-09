@@ -13,6 +13,7 @@ zplug "plugins/pip", from:oh-my-zsh
 zplug "plugins/web-search", from:oh-my-zsh
 zplug "plugins/tmux", from:oh-my-zsh
 zplug "plugins/colored-man-pages", from:oh-my-zsh
+zplug "djui/alias-tips"
 
 # Load theme file
 zplug "agnoster/agnoster-zsh-theme", as:theme
