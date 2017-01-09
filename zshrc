@@ -7,13 +7,12 @@ isLinux="[[ $OSTYPE == *linux* ]]"
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
 # plugins etc.
-zplug "lib/completion", from:oh-my-zsh
+zplug "lib/*", from:oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/pip", from:oh-my-zsh
 zplug "plugins/web-search", from:oh-my-zsh
 zplug "plugins/tmux", from:oh-my-zsh
 zplug "plugins/colored-man-pages", from:oh-my-zsh
-zplug "zsh-users/zsh-history-substring-search", defer:3
 
 # Load theme file
 zplug "agnoster/agnoster-zsh-theme", as:theme
@@ -35,15 +34,6 @@ TERM=screen-256color
 DEFAULT_USER="maclockard"
 
 export EDITOR="vim"
-
-# Settings and bindings for history
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
-bindkey -M vicmd 'k' history-substring-search-up
-bindkey -M vicmd 'j' history-substring-search-down
-
-HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='bg=none,fg=default'
-HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND='bg=none,fg=default'
 
 # color stuff for ls
 if eval $isOSX; then
