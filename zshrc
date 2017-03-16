@@ -9,6 +9,7 @@ zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 # plugins etc.
 zplug "lib/*", from:oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
+zplug "plugins/gradle", from:oh-my-zsh
 zplug "plugins/pip", from:oh-my-zsh
 zplug "plugins/web-search", from:oh-my-zsh
 zplug "plugins/tmux", from:oh-my-zsh
@@ -35,6 +36,10 @@ TERM=screen-256color
 DEFAULT_USER="maclockard"
 
 export EDITOR="vim"
+
+# vim mode for eiditng commandline stuff
+#bindkey -v
+#bindkey -M viins 'jk' vi-cmd-mode
 
 # color stuff for ls
 if eval $isOSX; then

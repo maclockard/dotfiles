@@ -8,6 +8,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/goyo.vim'
 Plug 'nathangrigg/vim-beancount'
+Plug 'derekwyatt/vim-scala'
 
 call plug#end()
 
@@ -28,7 +29,8 @@ let g:airline_theme='solarized'
 let g:airline_powerline_fonts = 1
 
 " Settings for focus mode (Goyo)
-map <leader>f :Goyo <bar> highlight StatusLineNC ctermfg=none <CR>
+"map <leader>f :Goyo <bar> highlight StatusLineNC ctermfg=none <CR>
+map <leader>f :Goyo <CR>
 
 " 80 char column marker
 "if exists('+colorcolumn')
