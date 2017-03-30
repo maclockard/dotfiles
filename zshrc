@@ -16,8 +16,9 @@ zplug "plugins/tmux", from:oh-my-zsh
 zplug "plugins/colored-man-pages", from:oh-my-zsh
 zplug "djui/alias-tips"
 
-# Load theme file
-zplug "agnoster/agnoster-zsh-theme", as:theme
+# Load pure theme and dependencies
+zplug "mafredri/zsh-async", from:github
+zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check; then
@@ -29,6 +30,8 @@ fi
 
 zplug load
 
+PURE_PROMPT_SYMBOL=λ
+
 # use the right term for tmux
 TERM=screen-256color
 
@@ -37,7 +40,7 @@ DEFAULT_USER="maclockard"
 
 export EDITOR="vim"
 
-# vim mode for eiditng commandline stuff
+# vim mode for editing commandline stuff
 #bindkey -v
 #bindkey -M viins 'jk' vi-cmd-mode
 
