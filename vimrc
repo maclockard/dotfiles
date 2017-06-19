@@ -10,7 +10,6 @@ Plug 'junegunn/goyo.vim'
 Plug 'nathangrigg/vim-beancount'
 Plug 'derekwyatt/vim-scala'
 Plug 'rust-lang/rust.vim'
-Plug 'rust-lang/rust.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'leafgarland/typescript-vim'
 
