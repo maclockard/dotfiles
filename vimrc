@@ -10,7 +10,8 @@ Plug 'junegunn/goyo.vim'
 Plug 'nathangrigg/vim-beancount'
 Plug 'derekwyatt/vim-scala'
 Plug 'rust-lang/rust.vim'
-Plug 'vim-syntastic/syntastic'
+Plug 'mbbill/undotree'
+"Plug 'vim-syntastic/syntastic'
 Plug 'leafgarland/typescript-vim'
 
 call plug#end()
@@ -38,17 +39,23 @@ map <leader>f :Goyo <CR>
 " Auto format rust
 let g:rustfmt_autosave = 1
 
+" Undo Tree
+if has("persistent_undo")
+    set undodir=~/.undodir/
+        set undofile
+    endif
+
 " Basic synstastic stuff
-let g:syntastic_rust_checkers = ['rustc']
+"let g:syntastic_rust_checkers = ['rustc']
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
 
 " 80 char column marker
 "if exists('+colorcolumn')

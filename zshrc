@@ -14,6 +14,7 @@ zplug "plugins/pip", from:oh-my-zsh
 zplug "plugins/web-search", from:oh-my-zsh
 zplug "plugins/tmux", from:oh-my-zsh
 zplug "plugins/colored-man-pages", from:oh-my-zsh
+zplug "plugins/yarn", from:oh-my-zsh
 zplug "djui/alias-tips"
 
 # Load pure theme and dependencies
@@ -65,9 +66,14 @@ alias idot='~/.dotfiles/install'
 alias updot='dotfiles ; git pull ; idot ; cd ~-'
 alias pushdot='dotfiles ; git add . ; git commit ; git push origin master ; cd ~-'
 
+# Spotify stuff
+alias sp='spotify'
+alias spp='spotify play'
+
 # shortcuts
 alias work='cd ~/workspace'
 alias intel='open -a "IntelliJ IDEA CE"'
+alias size='du -s -h *'
 
 # utilities
 alias untar='tar xvfz'
