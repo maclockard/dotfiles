@@ -11,6 +11,8 @@
     ~/.vimrc: vimrc
     ~/.gitconfig: gitconfig
     ~/.tmux.conf: tmux.conf
+    ~/.scripts: scripts
+    ~/.local-scripts: local-scripts
 
 - shell:
     - [git submodule update --init --recursive --remote, Installing submodules]

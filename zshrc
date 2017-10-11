@@ -55,6 +55,10 @@ if eval $isLinux; then
     alias ls='ls -lh --color=auto'
 fi
 
+# setup local scripts
+export PATH="$HOME/.scripts:$PATH"
+export PATH="$HOME/.local-scripts:$PATH"
+
 ### My aliases
 # make updating dot files easy
 alias dotfiles='cd ~/.dotfiles/'
