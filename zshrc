@@ -46,12 +46,12 @@ export EDITOR="vim"
 #bindkey -M viins 'jk' vi-cmd-mode
 
 # color stuff for ls
+export LS_COLORS='di=31:ln=35:so=31;1:pi=0;1:ex=1;31:bd=0;1:cd=37;1:su=37;1:sg=0;1:tw=0;1:ow=0;1:'
 if eval $isOSX; then
     export LSCOLORS=bxfxbEaEBxxEhEhBaDaCaD
     alias ls='ls -lGh'
 fi
 if eval $isLinux; then
-    export LS_COLORS='di=31:ln=35:so=31;1:pi=0;1:ex=1;31:bd=0;1:cd=37;1:su=37;1:sg=0;1:tw=0;1:ow=0;1:'
     alias ls='ls -lh --color=auto'
 fi
 
