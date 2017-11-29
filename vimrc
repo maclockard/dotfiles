@@ -22,6 +22,12 @@ set number
 set tabstop=4 shiftwidth=4 expandtab
 imap jk <ESC>
 
+" allow backspacing in insert mode
+set backspace=indent,eol,start
+
+" copy and paste to clipboard
+set clipboard=unnamed
+
 " Stuff for color scheme
 syntax enable
 set background=dark

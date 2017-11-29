@@ -82,7 +82,22 @@ alias size='du -s -h *'
 # utilities
 alias untar='tar xvfz'
 
+# fuzzy finding
+export FZF_DEFAULT_COMMAND='fd -t f'
+alias fz='fzf --height 45% --preview "head -100 {}"'
+alias fzd='fd -t d | fzf --height 45% --preview "ls"'
+alias ff='vim $(fz)'
+alias ffd='cd $(fzd)'
+
 # If there is a local configuration file, load it
 if [ -f ~/.zshrc_local ]; then
     source ~/.zshrc_local
 fi
+
+# docker stuff
+#alias dstop="docker stop '$(docker ps -a -q)'"
+#alias drmi="docker rmi '$(docker images -a -q)"
+#alias drm="docker rm $(docker ps -a -q)"
+#alias drmv="docker volume rm $(docker volume ls -f dangling=true -q)"
+#alias dnuke="dstop && drm"
+
