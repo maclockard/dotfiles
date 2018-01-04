@@ -29,6 +29,10 @@ if ! zplug check; then
     fi
 fi
 
+# this is here for rust completions
+# remove once there is something better
+fpath+=~/.zfunc
+
 zplug load
 
 PURE_PROMPT_SYMBOL=λ
