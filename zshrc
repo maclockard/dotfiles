@@ -9,7 +9,6 @@ zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 # plugins etc.
 zplug "lib/*", from:oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
-zplug "plugins/gradle", from:oh-my-zsh
 zplug "plugins/pip", from:oh-my-zsh
 zplug "plugins/web-search", from:oh-my-zsh
 zplug "plugins/tmux", from:oh-my-zsh
@@ -60,8 +59,8 @@ if eval $isLinux; then
 fi
 
 # setup local scripts
-export PATH="$HOME/.scripts:$PATH"
-export PATH="$HOME/.local-scripts:$PATH"
+export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/bin/local:$PATH"
 
 ### My aliases
 # make updating dot files easy
