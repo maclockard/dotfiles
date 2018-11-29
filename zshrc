@@ -15,11 +15,11 @@ zplug "plugins/tmux", from:oh-my-zsh
 zplug "plugins/colored-man-pages", from:oh-my-zsh
 zplug "plugins/yarn", from:oh-my-zsh
 zplug "djui/alias-tips"
+zplug "rupa/z", use:z.sh
 
 # Load pure theme and dependencies
 zplug "mafredri/zsh-async", from:github
 zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
-zplug "rupa/z", use:z.sh
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check; then
