@@ -8,4 +8,4 @@ DIRNAME=`basename $DIR`
 tmux new-window -c $DIR -t $SESSION -a -n $DIRNAME
 tmux split-window -c $DIR -h
 tmux select-pane -t 0
-tmux resize-pane -R 20
+tmux resize-pane -R 10

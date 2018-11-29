@@ -7,4 +7,4 @@ DIR=`basename $PWD`
 tmux new-window -t $SESSION -a -n $DIR
 tmux split-window -h
 tmux select-pane -t 0
-tmux resize-pane -R 20
+tmux resize-pane -R 10
