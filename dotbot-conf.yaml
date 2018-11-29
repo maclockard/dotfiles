@@ -1,7 +1,7 @@
 - clean: ['~', '~/.config']
 
 - link:
-    ~/.dotfiles: './'
+    ~/.dotfiles: ''
     ~/.zplug: submodules/zplug
     ~/.zshrc: zshrc
     ~/.zshrc_local: zshrc_local
@@ -11,7 +11,7 @@
     ~/.vimrc: vimrc
     ~/.gitconfig: gitconfig
     ~/.tmux.conf: tmux.conf
-    ~/bin: bin
+    ~/bin: scripts
 
 - shell:
     - [git submodule update --init --recursive --remote, Installing submodules]

@@ -19,6 +19,7 @@ zplug "djui/alias-tips"
 # Load pure theme and dependencies
 zplug "mafredri/zsh-async", from:github
 zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
+zplug "rupa/z", use:z.sh
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check; then
@@ -43,10 +44,6 @@ TERM=screen-256color
 DEFAULT_USER="maclockard"
 
 export EDITOR="vim"
-
-# vim mode for editing commandline stuff
-#bindkey -v
-#bindkey -M viins 'jk' vi-cmd-mode
 
 # color stuff for ls
 export LS_COLORS='di=31:ln=35:so=31;1:pi=0;1:ex=1;31:bd=0;1:cd=37;1:su=37;1:sg=0;1:tw=0;1:ow=0;1:'
@@ -82,6 +79,9 @@ alias work='cd ~/workspace'
 alias intel='open -a "IntelliJ IDEA CE"'
 alias size='du -s -h *'
 
+# frontend
+alias y='yarn'
+
 # utilities
 alias untar='tar xvfz'
 
@@ -97,10 +97,6 @@ if [ -f ~/.zshrc_local ]; then
     source ~/.zshrc_local
 fi
 
-# docker stuff
-#alias dstop="docker stop '$(docker ps -a -q)'"
-#alias drmi="docker rmi '$(docker images -a -q)"
-#alias drm="docker rm $(docker ps -a -q)"
-#alias drmv="docker volume rm $(docker volume ls -f dangling=true -q)"
-#alias dnuke="dstop && drm"
+# make a gif from a quicktime movie
+alias gif='ffmpeg -i in.mov -pix_fmt rgb24 -r 20 -f gif - | gifsicle --optimize=3 --delay=3 > out.gif'
 
