@@ -59,6 +59,12 @@ fi
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/bin/local:$PATH"
 
+# zsh vi mode
+bindkey -v
+export KEYTIMOUT=1 # lag of .1 seconds when switching modes
+bindkey -M viins 'jk' vi-cmd-mode
+bindkey "^?" backward-delete-char # actually allow deleting
+
 ### My aliases
 # make updating dot files easy
 alias dotfiles='cd ~/.dotfiles/'
