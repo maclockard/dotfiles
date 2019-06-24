@@ -4,6 +4,12 @@ source ~/.zplug/init.zsh
 isOSX="[[ $OSTYPE == *darwin* ]]"
 isLinux="[[ $OSTYPE == *linux* ]]"
 
+# zsh vi mode
+bindkey -v
+export KEYTIMOUT=1 # lag of .1 seconds when switching modes
+bindkey -M viins 'jk' vi-cmd-mode
+bindkey "^?" backward-delete-char # actually allow deleting
+
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
 # plugins etc.
@@ -59,12 +65,6 @@ fi
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/bin/local:$PATH"
 
-# zsh vi mode
-bindkey -v
-export KEYTIMOUT=1 # lag of .1 seconds when switching modes
-bindkey -M viins 'jk' vi-cmd-mode
-bindkey "^?" backward-delete-char # actually allow deleting
-
 ### My aliases
 # make updating dot files easy
 alias dotfiles='cd ~/.dotfiles/'
@@ -84,9 +84,11 @@ alias spp='spotify play'
 alias work='cd ~/workspace'
 alias intel='open -a "IntelliJ IDEA CE"'
 alias size='du -s -h *'
+alias stat='stat -x'
 
 # frontend
 alias y='yarn'
+alias ud="cat ./package.json | jq .dependencies | jq -r 'keys[]' | xargs -L 1 -I % sh -c 'rg % | wc -l | xargs echo %' | rg \" 1$\""
 
 # utilities
 alias untar='tar xvfz'
