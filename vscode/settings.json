@@ -1,0 +1,60 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "editor.fontFamily": "Source Code Pro for Powerline, Menlo",
+  "editor.fontSize": 14,
+  "editor.minimap.renderCharacters": false,
+  "editor.fontLigatures": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.decorations.badges": false,
+  "files.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/.gradle": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true
+  },
+  "http.proxyStrictSSL": false,
+  "gitlens.blame.avatars": false,
+  "gitlens.keymap": "alternate",
+  "gitlens.statusBar.enabled": false,
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.blame.format": "${author|20?} @ ${id} ${ago|14-}",
+  "gitlens.currentLine.enabled": false,
+  "vim.useSystemClipboard": true,
+  "vim.leader": "<space>",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "workbench.colorTheme": "Material Theme",
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "window.zoomLevel": 0,
+  "files.insertFinalNewline": true,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "breadcrumbs.enabled": true,
+  "debug.node.autoAttach": "on",
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.fileHistory.location": "scm",
+  "gitlens.views.lineHistory.enabled": true,
+  "gitlens.views.lineHistory.location": "scm",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "explorer.openEditors.visible": 0,
+  "editor.minimap.showSlider": "always",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorBlinking": "phase",
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "gitlens.advanced.telemetry.enabled": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "workbench.iconTheme": "eq-material-theme-icons",
+  "openInGitHub.defaultBranch": "develop"
+}
