@@ -108,3 +108,19 @@ fi
 # make a gif from a quicktime movie
 alias gif='ffmpeg -i in.mov -pix_fmt rgb24 -r 20 -f gif - | gifsicle --optimize=3 --delay=3 > out.gif'
 
+# python shit
+PATH="/Users/mlockard/Library/Python/2.7/bin:$PATH"
+
+# rust shit
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# yarn shit
+export PATH="${HOME}/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="../../node_modules/.bin:$PATH"
+export PATH="./node_modules/.bin:$PATH"
+
+# vs code
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+# useful env vars
+export WORK="$HOME/workspace"
