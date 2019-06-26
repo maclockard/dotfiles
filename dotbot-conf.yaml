@@ -11,6 +11,7 @@
     ~/.vimrc: vimrc
     ~/.gitconfig: gitconfig
     ~/.tmux.conf: tmux.conf
+    ~/.iterm: iterm
     ~/bin: bin
 
 - shell:
