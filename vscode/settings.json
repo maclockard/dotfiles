@@ -8,7 +8,6 @@
   "explorer.decorations.badges": false,
   "files.exclude": {
     "**/.git": true,
-    "**/node_modules": true,
     "**/.gradle": true,
     "**/.svn": true,
     "**/.hg": true,

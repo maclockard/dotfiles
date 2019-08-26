@@ -4,7 +4,7 @@
 	smudge = git media smudge %f
 [user]
 	name = Mac Lockard
-	email = mlockard@palantir.com
+	email = maclockard@gmail.com
 [core]
 	autocrlf = input
 	trustctime = false
