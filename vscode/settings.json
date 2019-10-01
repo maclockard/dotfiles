@@ -55,5 +55,8 @@
   "gitlens.advanced.telemetry.enabled": false,
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.iconTheme": "eq-material-theme-icons",
-  "openInGitHub.defaultBranch": "develop"
+  "openInGitHub.defaultBranch": "develop",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
