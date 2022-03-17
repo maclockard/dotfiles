@@ -5,10 +5,10 @@ isOSX="[[ $OSTYPE == *darwin* ]]"
 isLinux="[[ $OSTYPE == *linux* ]]"
 
 # zsh vi mode
-bindkey -v
-export KEYTIMOUT=1 # lag of .1 seconds when switching modes
-bindkey -M viins 'jk' vi-cmd-mode
-bindkey "^?" backward-delete-char # actually allow deleting
+# bindkey -v
+# export KEYTIMOUT=1 # lag of .1 seconds when switching modes
+# bindkey -M viins 'jk' vi-cmd-mode
+# bindkey "^?" backward-delete-char # actually allow deleting
 
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
@@ -109,18 +109,31 @@ fi
 alias gif='ffmpeg -i in.mov -pix_fmt rgb24 -r 20 -f gif - | gifsicle --optimize=3 --delay=3 > out.gif'
 
 # python shit
-PATH="/Users/mlockard/Library/Python/2.7/bin:$PATH"
+PATH="/Users/maclockard/Library/Python/3.7/bin:$PATH"
+
+# ruby shit
+PATH="/Users/maclockard/.gem/ruby/2.6.0/bin:$PATH"
 
 # rust shit
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # yarn shit
 export PATH="${HOME}/.config/yarn/global/node_modules/.bin:$PATH"
-export PATH="../../node_modules/.bin:$PATH"
-export PATH="./node_modules/.bin:$PATH"
+#export PATH="../../node_modules/.bin:$PATH"
+#export PATH="./node_modules/.bin:$PATH"
 
 # vs code
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # useful env vars
 export WORK="$HOME/workspace"
+
+# brew completions
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
+rm -f ~/.zcompdump; compinit
+

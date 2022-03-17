@@ -1,6 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
   "editor.fontFamily": "Source Code Pro for Powerline, Menlo",
+  "editor.fontWeight": "100",
   "editor.fontSize": 14,
   "editor.minimap.renderCharacters": false,
   "editor.fontLigatures": true,
@@ -11,7 +12,11 @@
     "**/.gradle": true,
     "**/.svn": true,
     "**/.hg": true,
-    "**/.DS_Store": true
+    "**/.DS_Store": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
   },
   "http.proxyStrictSSL": false,
   "gitlens.blame.avatars": false,
@@ -20,7 +25,6 @@
   "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.blame.format": "${author|20?} @ ${id} ${ago|14-}",
-  "gitlens.currentLine.enabled": false,
   "vim.useSystemClipboard": true,
   "vim.leader": "<space>",
   "vim.insertModeKeyBindings": [
@@ -29,11 +33,10 @@
       "after": ["<Esc>"]
     }
   ],
-  "workbench.colorTheme": "Material Theme",
+  "workbench.colorTheme": "Community Material Theme",
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
-  "window.zoomLevel": 0,
   "files.insertFinalNewline": true,
   "typescript.updateImportsOnFileMove.enabled": "never",
   "breadcrumbs.enabled": true,
@@ -54,9 +57,32 @@
   "telemetry.enableTelemetry": false,
   "gitlens.advanced.telemetry.enabled": false,
   "workbench.settings.enableNaturalLanguageSearch": false,
-  "workbench.iconTheme": "eq-material-theme-icons",
   "openInGitHub.defaultBranch": "develop",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "workbench.iconTheme": "eq-material-theme-icons",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.jediEnabled": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.editor.wrapTabs": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "editor.tabSize": 8,
+  "editor.cursorStyle": "line",
+  "editor.insertSpaces": false,
+  "editor.lineNumbers": "on",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+"python.languageServer": "Default",
+"gitlens.hovers.currentLine.over": "line",
+"gitlens.currentLine.enabled": false,
+"gitlens.codeLens.enabled": false,
+"window.zoomLevel": 1
 }

@@ -8,6 +8,7 @@
 [core]
 	autocrlf = input
 	trustctime = false
+    pager = delta --syntax-theme='Solarized (dark)'
 [credential]
 	helper = store
 [push]
@@ -16,3 +17,5 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	required = true
+[pull]
+	ff = only
