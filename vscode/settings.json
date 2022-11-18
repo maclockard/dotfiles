@@ -84,5 +84,7 @@
 "gitlens.hovers.currentLine.over": "line",
 "gitlens.currentLine.enabled": false,
 "gitlens.codeLens.enabled": false,
-"window.zoomLevel": 1
+"snyk.yesWelcomeNotification": false,
+"editor.stickyScroll.enabled": true,
+"window.zoomLevel": 2
 }
