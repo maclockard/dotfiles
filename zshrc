@@ -118,7 +118,7 @@ PATH="/Users/maclockard/.gem/ruby/2.6.0/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # yarn shit
-export PATH="${HOME}/.config/yarn/global/node_modules/.bin:$PATH"
+#export PATH="${HOME}/.config/yarn/global/node_modules/.bin:$PATH"
 #export PATH="../../node_modules/.bin:$PATH"
 #export PATH="./node_modules/.bin:$PATH"
 

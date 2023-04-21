@@ -51,7 +51,7 @@
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "explorer.openEditors.visible": 0,
   "editor.minimap.showSlider": "always",
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "phase",
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
@@ -86,5 +86,5 @@
 "gitlens.codeLens.enabled": false,
 "snyk.yesWelcomeNotification": false,
 "editor.stickyScroll.enabled": true,
-"window.zoomLevel": 2
+"window.zoomLevel": 3
 }
