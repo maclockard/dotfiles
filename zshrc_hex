@@ -1,0 +1,16 @@
+# aws sso script
+source ~/workspace/hex-inc/hex/scripts/sso_login.sh
+
+# assume role script
+source ~/workspace/hex-inc/hex/scripts/assumerole.sh
+
+# hdev
+export PATH="/Users/maclockard/workspace/hex-inc/hex/bin:$PATH"
+
+# devbox
+eval "$(devbox global shellenv --init-hook)"
+eval "$(direnv hook zsh)"
+
+# worktrees
+worktree()   { "$HOME/.claude/skills/worktree/worktree.sh" "$@"; }
+unworktree() { "$HOME/.claude/skills/unworktree/unworktree.sh" "$@"; }

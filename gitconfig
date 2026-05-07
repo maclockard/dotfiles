@@ -21,3 +21,5 @@
     required = true
 [pull]
     ff = only
+[include]
+  path = ~/workspace/hex-inc/epd-toolbox/shared/dotfiles-lite/git/gitconfig.snippet

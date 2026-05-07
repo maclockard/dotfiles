@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(hdev:*)"
+    ],
+    "defaultMode": "plan"
+  },
+  "model": "opus[1m]",
+  "effortLevel": "high",
+  "preferredNotifChannel": "iterm2",
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "idle_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "MSG=$(jq -r '.message // \"Claude Code is done\"'); printf '\\a' > /dev/tty 2>/dev/null; terminal-notifier -title 'Claude Code' -message \"$MSG\" -sound Glass 2>/dev/null || true",
+            "timeout": 5
+          }
+        ]
+      },
+      {
+        "matcher": "permission_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "MSG=$(jq -r '.message // \"Claude Code needs permission\"'); printf '\\a' > /dev/tty 2>/dev/null; terminal-notifier -title 'Claude Code' -message \"$MSG\" -sound Ping 2>/dev/null || true",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

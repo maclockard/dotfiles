@@ -68,6 +68,7 @@ export PATH="$HOME/bin/local:$PATH"
 alias upzsh='source ~/.zshrc'
 alias zshrc='vim ~/.zshrc && upzsh'
 alias zshrc_local='vim ~/.zshrc_local && upzsh'
+alias zshrc_hex='vim ~/.zshrc_hex && upzsh'
 
 # spotify stuff
 alias sp='spotify'
@@ -92,6 +93,10 @@ alias ffd='cd $(fzd)'
 # If there is a local configuration file, load it
 if [ -f ~/.zshrc_local ]; then
     source ~/.zshrc_local
+fi
+
+if [ -f ~/.zshrc_hex ]; then
+    source ~/.zshrc_hex
 fi
 
 # make a gif from a quicktime movie

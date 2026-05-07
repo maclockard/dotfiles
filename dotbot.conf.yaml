@@ -4,6 +4,7 @@
     ~/.zplug: submodules/zplug
     ~/.zshrc: zshrc
     ~/.zshrc_local: zshrc_local
+    ~/.zshrc_hex: zshrc_hex
     ~/.vim/autoload/plug.vim:
         create: true
         path: 'submodules/vim-plug/plug.vim'
@@ -11,6 +12,11 @@
     ~/.gitconfig: gitconfig
     ~/.tmux.conf: tmux.conf
     ~/.iterm: iterm
+    ~/.claude/settings.json: claude.json
+    ~/.claude/skills/grow: ~/workspace/hex-inc/epd-toolbox/shared/dotfiles-lite/claude/skills/grow
+    ~/.claude/skills/unworktree : ~/workspace/hex-inc/epd-toolbox/shared/dotfiles-lite/claude/skills/unworktree
+    ~/.claude/skills/worktree : ~/workspace/hex-inc/epd-toolbox/shared/dotfiles-lite/claude/skills/worktree
+    ~/.config/tmuxinator/worktree.yml : ~/workspace/hex-inc/epd-toolbox/shared/dotfiles-lite/tmuxinator/worktree.yml
     ~/Library/Application Support/Code/User/settings.json: vscode/settings.json 
     ~/Library/Application Support/Code/User/keybindings.json: vscode/keybindings.json 
     ~/Library/Application Support/Code/User/snippets: vscode/snippets
