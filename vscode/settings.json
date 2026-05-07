@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-  "editor.fontFamily": "Source Code Pro for Powerline, Menlo",
+  "editor.fontFamily": "CommitMono, Menlo",
   "editor.fontWeight": "100",
   "editor.fontSize": 14,
   "editor.minimap.renderCharacters": false,
@@ -33,7 +33,6 @@
       "after": ["<Esc>"]
     }
   ],
-  "workbench.colorTheme": "Community Material Theme",
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
@@ -79,12 +78,30 @@
     "default": "right",
     "jupyter-notebook": "left"
   },
-"python.languageServer": "Default",
-"gitlens.hovers.currentLine.over": "line",
-"gitlens.currentLine.enabled": false,
-"gitlens.codeLens.enabled": false,
-"snyk.yesWelcomeNotification": false,
-"editor.stickyScroll.enabled": true,
-"window.zoomLevel": 2,
-"window.commandCenter": false
+  "python.languageServer": "Default",
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.currentLine.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "snyk.yesWelcomeNotification": false,
+  "editor.stickyScroll.enabled": true,
+  "window.commandCenter": false,
+  "window.zoomLevel": 1,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "git.openRepositoryInParentFolders": "never",
+  "direnv.path.executable": "/Users/maclockard/.local/share/devbox/global/default/.devbox/nix/profile/default/bin/direnv",
+  "workbench.colorTheme": "Community Material Theme",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {},
+  "json.schemaDownload.trustedDomains": {
+    "https://developer.microsoft.com/json-schemas/": true,
+    "https://json-schema.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://raw.githubusercontent.com/devcontainers/spec/": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://schemastore.azurewebsites.net/": true,
+    "https://turbo.build": true,
+    "https://www.schemastore.org/": true
+  }
 }
