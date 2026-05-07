@@ -1,9 +1,12 @@
 [submodule "submodules/dotbot"]
 	path = submodules/dotbot
 	url = https://github.com/anishathalye/dotbot
+	ignore = dirty
 [submodule "submodules/zplug"]
 	path = submodules/zplug
 	url = https://github.com/zplug/zplug
+	ignore = dirty
 [submodule "submodules/vim-plug"]
 	path = submodules/vim-plug
 	url = https://github.com/junegunn/vim-plug
+	ignore = dirty

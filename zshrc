@@ -15,11 +15,8 @@ zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 # plugins etc.
 zplug "lib/*", from:oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
-zplug "plugins/pip", from:oh-my-zsh
-zplug "plugins/web-search", from:oh-my-zsh
 zplug "plugins/tmux", from:oh-my-zsh
 zplug "plugins/colored-man-pages", from:oh-my-zsh
-zplug "plugins/yarn", from:oh-my-zsh
 zplug "djui/alias-tips"
 zplug "rupa/z", use:z.sh
 
@@ -46,7 +43,7 @@ PURE_PROMPT_SYMBOL=λ
 # use the right term for tmux
 TERM=screen-256color
 
-# Remove "user@hostname" when I'm the one logged in
+# remove "user@hostname" when I'm the one logged in
 DEFAULT_USER="maclockard"
 
 export EDITOR="vim"
@@ -65,18 +62,14 @@ fi
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/bin/local:$PATH"
 
-### My aliases
-# make updating dot files easy
-alias dotfiles='cd ~/.dotfiles/'
-alias upzsh='source ~/.zshrc'
-alias zshrc='vim ~/.dotfiles/zshrc && upzsh'
-alias zshrc_local='vim ~/.dotfiles/zshrc_local && upzsh'
-alias vimrc='vim ~/.dotfiles/vimrc'
-alias idot='~/.dotfiles/install'
-alias updot='dotfiles ; git pull ; idot ; cd ~-'
-alias pushdot='dotfiles ; git add . ; git commit ; git push origin master ; cd ~-'
+### my aliases
 
-# Spotify stuff
+# dotfiles
+alias upzsh='source ~/.zshrc'
+alias zshrc='vim ~/.zshrc && upzsh'
+alias zshrc_local='vim ~/.zshrc_local && upzsh'
+
+# spotify stuff
 alias sp='spotify'
 alias spp='spotify play'
 
@@ -85,10 +78,6 @@ alias work='cd ~/workspace'
 alias intel='open -a "IntelliJ IDEA CE"'
 alias size='du -s -h *'
 alias stat='stat -x'
-
-# frontend
-alias y='yarn'
-alias ud="cat ./package.json | jq .dependencies | jq -r 'keys[]' | xargs -L 1 -I % sh -c 'rg % | wc -l | xargs echo %' | rg \" 1$\""
 
 # utilities
 alias untar='tar xvfz'
@@ -108,21 +97,10 @@ fi
 # make a gif from a quicktime movie
 alias gif='ffmpeg -i in.mov -pix_fmt rgb24 -r 20 -f gif - | gifsicle --optimize=3 --delay=3 > out.gif'
 
-# python shit
-PATH="/Users/maclockard/Library/Python/3.7/bin:$PATH"
-
-# ruby shit
-PATH="/Users/maclockard/.gem/ruby/2.6.0/bin:$PATH"
-
-# rust shit
+# rust
 export PATH="$HOME/.cargo/bin:$PATH"
 
-# yarn shit
-#export PATH="${HOME}/.config/yarn/global/node_modules/.bin:$PATH"
-#export PATH="../../node_modules/.bin:$PATH"
-#export PATH="./node_modules/.bin:$PATH"
-
-# vs code
+# vscode
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # useful env vars
@@ -136,4 +114,3 @@ if type brew &>/dev/null; then
   compinit
 fi
 rm -f ~/.zcompdump; compinit
-

@@ -1,7 +1,6 @@
 - clean: ['~', '~/.config']
 
 - link:
-    ~/.dotfiles: ''
     ~/.zplug: submodules/zplug
     ~/.zshrc: zshrc
     ~/.zshrc_local: zshrc_local
