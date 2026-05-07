@@ -58,7 +58,7 @@ if eval $isOSX; then
     alias ls='ls -lGh'
 fi
 if eval $isLinux; then
-    alias ls='ls -lh --color=auto'
+    alias ls='ls -lh'
 fi
 
 # setup local scripts

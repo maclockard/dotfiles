@@ -9,6 +9,8 @@
 	autocrlf = input
 	trustctime = false
     pager = delta --syntax-theme='Solarized (dark)'
+[diff]
+    external = difft
 [credential]
 	helper = store
 [push]

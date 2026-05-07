@@ -65,7 +65,6 @@
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "python.jediEnabled": false,
-  "diffEditor.ignoreTrimWhitespace": false,
   "workbench.editor.wrapTabs": true,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
@@ -86,5 +85,6 @@
 "gitlens.codeLens.enabled": false,
 "snyk.yesWelcomeNotification": false,
 "editor.stickyScroll.enabled": true,
-"window.zoomLevel": 3
+"window.zoomLevel": 2,
+"window.commandCenter": false
 }
